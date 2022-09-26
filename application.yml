@@ -18,7 +18,7 @@ eureka:
     hostname: localhost
   client:
     service-url:
-      defaultZone: http://eureka:8761/eureka/
+      defaultZone: ${eureka_url:http://eureka:8761/eureka}
 management:
   info:
     env:
